@@ -1,0 +1,46 @@
+<br />
+<div class="container" *ngIf="!mobile">
+  <ul class="list-group">
+    <li
+      style="z-index: 0"
+      role="button"
+      *ngIf="language"
+      class="list-group-item active shadow-lg"
+      (click)="getProducts()"
+      (click)="setCurrentCategoryDefault()"
+    >
+      <p style="padding: 5px; margin: auto; font-weight: bolder; color: white">
+        Tüm Ürünler
+      </p>
+    </li>
+    <li
+      style="z-index: 0"
+      role="button"
+      *ngIf="!language"
+      class="list-group-item active shadow-lg"
+      (click)="getProducts()"
+      (click)="setCurrentCategoryDefault()"
+    >
+      <p style="padding: 5px; margin: auto; font-weight: bolder; color: white">
+        All Products
+      </p>
+    </li>
+    <li
+      role="button"
+      (click)="setCurrentCategory(category)"
+      routerLink="/products/category/{{ category.categoryId }}"
+      *ngFor="let category of categories"
+      [class]="getCurrentCategoryClass(category)"
+    >
+      <p *ngIf="language" style="padding: 5px; margin: auto; font-weight: bold">
+        {{ category.categoryName }}
+      </p>
+      <p
+        *ngIf="!language"
+        style="padding: 5px; margin: auto; font-weight: bold"
+      >
+        {{ category.categoryName_EN }}
+      </p>
+    </li>
+  </ul>
+</div>

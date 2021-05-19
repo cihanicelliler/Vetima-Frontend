@@ -1,0 +1,90 @@
+<nav class="navbar fixed-top navbar-expand-lg navbar-light">
+  <div class="container-fluid">
+    <a
+      class="navbar-brand"
+      href="#"
+      style="margin-left: 5rem; margin-right: 7rem"
+    >
+      <img src="../../../assets/images/nav-image.png" alt="" />
+    </a>
+    <button
+      class="navbar-toggler"
+      type="button"
+      data-bs-toggle="collapse"
+      data-bs-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent"
+      aria-expanded="false"
+      aria-label="Toggle navigation"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item mx-2">
+          <a
+            role="button"
+            class="nav-link"
+            style="font-size: 1rem"
+            aria-current="page"
+            (click)="goToHomePage()"
+            ><p *ngIf="language"><b>Anasayfa</b></p><p *ngIf="!language"><b>Home</b></p></a
+          >
+        </li>
+        <li class="nav-item mx-2">
+          <a
+            role="button"
+            (click)="goToCompanyProfile()"
+            class="nav-link"
+            style="font-size: 1rem"
+            aria-current="page"
+            ><p *ngIf="language"><b>Şirket Profili</b></p><p *ngIf="!language"><b>Company Profile</b></p></a
+          >
+        </li>
+        <li class="nav-item mx-2" (click)="goToVideos()">
+          <a role="button" class="nav-link" style="font-size: 1rem"
+            ><p *ngIf="language"><b>Tanıtım Videoları</b></p><p *ngIf="!language"><b>Introductory Videos</b></p></a
+          >
+        </li>
+        <li class="nav-item mx-2">
+          <a
+            role="button"
+            (click)="goToEvents()"
+            class="nav-link"
+            style="font-size: 1rem"
+            ><p *ngIf="language"><b>Etkinlikler</b></p><p *ngIf="!language"><b>Events</b></p></a
+          >
+        </li>
+        <li class="nav-item mx-2">
+          <a  role="button" class="nav-link" style="font-size: 1rem" (click)="goToContact()"
+            ><p *ngIf="language"><b>İletişim</b></p><p *ngIf="!language"><b>Contact</b></p></a
+          >
+        </li>
+        <li class="nav-item mx-2" (click)="goProducts()">
+          <a role="button" class="nav-link" style="font-size: 1rem"
+            ><p *ngIf="language"><b>Ürünler</b></p><p *ngIf="!language"><b>Products</b></p></a
+          >
+        </li>
+      </ul>
+
+      <div class="d-flex">
+        <img
+          role="button"
+          (click)="setTurkish()"
+          src="../../../assets/images/turkey-1.png"
+          width="52px"
+          height="52px"
+          alt=""
+        />
+        <img
+          role="button"
+          (click)="setEnglish()"
+          src="../../../assets/images/united-states.png"
+          style="margin-top: 5px"
+          width="40px"
+          height="40px"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</nav>

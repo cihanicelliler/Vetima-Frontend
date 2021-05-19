@@ -1,0 +1,146 @@
+<div *ngIf="language" class="container mt-5">
+  <h1 style="text-align: center; background-color: #00a7b8; padding:10px; color:white;  border-radius: 10px;">Şirket Profili</h1>
+  <br />
+  <p>
+    Erkoç, hayvancılıkla ilgili tıbbi malzemeler konusunda Türkiye ve Dünya’da
+    yenilikleri eş zamanlı olarak takip eden, çevreye ve insana zarar vermeyen
+    ürünleri bünyesinde barındıran sektörün deneyimli ve öncü kuruluşlarından
+    biridir.
+  </p>
+  <br />
+  <p>
+    Tamamı konusunun uzmanı dinamik ve deneyimli kadrosuyla İstanbul merkez
+    olmak üzere yurt çapında yaygın temsilcilik ve dağıtım ağıyla veteriner ve
+    çiftliklerin bir numaralı tercihi olmaya çalışmaktadır.
+  </p>
+  <br />
+  <p>
+    Erkoç, veteriner hekimlerin ihtiyaçlarına ve taleplerine cevap verecek
+    yeniliklerle ürünlerini sürekli geliştirmekte ve bu şekilde piyasanın içinde
+    yaşayan canlı bir varlık haline gelip beklentileri en üst düzeyde
+    karşılamaktadır.
+  </p>
+  <br />
+  <p>
+    Misyonumuz, müşteri memnuniyeti, vizyonumuz ise ciddi güvenilir, teknolojiyi
+    yakından takip eden, kurumsal hüviyetinden ödün vermeyen bir şirket
+    olmaktır. Uluslararası pazarda başarısı kanıtlanmış naturel ilaçları, aşı,
+    alet ve ekipmanları Erkoç’ tan temin edebilirsiniz! İhtiyacınıza uygun ve
+    maliyet baskısı yapmayan medikal malzemeler hayvancılık faaliyetlerinizi
+    daha kârlı hale getirecek. Önleyici ve tedavi edici yenilikçi ürünler
+    çiftliklerinizin verimini arttıracak. Zamanında ve doğru teslim edilen
+    malzemeler iş yükünüzü hafifletecek.
+  </p>
+  <br />
+  <p>
+    Hayvancılık sektöründe 27 yıllık tecrübeye sahip Erkoç, güçlü
+    temsilcilikleri ile siz veteriner hekimlerin ve çiftlik sahiplerinin
+    yenilikçi ve modern ortağıdır.
+  </p>
+</div>
+<div *ngIf="!language" class="container mt-5">
+  <h1 style="text-align: center; background-color: #00a7b8; padding:10px; color:white; border-radius: 10px;">Company Profile</h1>
+  <br />
+  <p>
+    Erkoç is one of the experienced and pioneering companies in the sector,
+    which follows the innovations in the field of animal husbandry-related
+    medical equipment in Turkey and the world simultaneously and incorporates
+    products that do not harm the environment and people.
+  </p>
+  <br />
+  <p>
+    Istanbul center with its dynamic and experienced staff, all of whom are experts in their subject.
+    With its widespread representation and distribution network throughout the country, veterinarians and
+    strives to be the number one choice of farms.
+  </p>
+  <br />
+  <p>
+    Erkoç will respond to the needs and demands of veterinarians
+    constantly improves its products with innovations and in this way in the market
+    has become a living creature and its expectations are at the highest level.
+    meets.
+  </p>
+  <br />
+  <p>
+    Our mission is customer satisfaction, our vision is seriously reliable, technology
+    A company that follows closely and does not compromise its corporate identity
+    is to be. Natural medicines, vaccines, with proven success in the international market
+    You can get tools and equipment from Erkoç! Suitable for your needs and
+    Medical supplies that do not put pressure on your costs
+    will make it more profitable. Preventive and therapeutic innovative products
+    It will increase the productivity of your farms. Delivered on time and accurately
+    materials will lighten your workload.
+  </p>
+  <br />
+  <p>
+    Erkoç, with 27 years of experience in the livestock sector,
+    representatives of veterinarians and farm owners
+    is an innovative and modern partner.
+  </p>
+</div>
+
+<main
+  class="profile_container"
+  style="display: block; margin-right: auto; margin-left: auto; z-index: 0"
+>
+  <div class="wraps">
+    <div class="profile_img">
+      <span></span>
+    </div>
+    <div class="profile_details">
+      <h1 class="username">Faruk Koçak</h1>
+
+      <div class="user_info">
+        <span *ngIf="language" class="info">Genel Müdür</span>
+        <span *ngIf="!language" class="info">General Manager</span>
+      </div>
+    </div>
+  </div>
+</main>
+<main class="profile_container" style="float: left !important; z-index: 0;">
+  <div class="wraps">
+    <div class="profile_img1">
+      <span></span>
+    </div>
+    <div class="profile_details">
+      <h1 class="username">Hilal Bayhan</h1>
+
+      <div class="user_info">
+        <span *ngIf="language" class="info">İthalat Sorumlusu</span>
+        <span *ngIf="!language" class="info">Import Manager</span>
+      </div>
+    </div>
+  </div>
+</main>
+<main class="profile_container" style="float: left !important; z-index: 0">
+  <div class="wraps">
+    <div class="profile_img2">
+      <span></span>
+    </div>
+    <div class="profile_details">
+      <h1 class="username">Murat Turan</h1>
+
+      <div class="user_info">
+        <span *ngIf="language" class="info">Sevkiyat Sorumlusu</span>
+        <span *ngIf="!language" class="info">Responsible for the shipment</span>
+      </div>
+    </div>
+  </div>
+</main>
+<main class="profile_container" style="float: left !important; z-index: 0">
+  <div class="wraps">
+    <div class="profile_img3">
+      <span></span>
+    </div>
+    <div class="profile_details">
+      <h1 class="username">Berkay Koçak</h1>
+
+      <div class="user_info">
+        <span *ngIf="language" class="info">Grafik Tasarımcı</span>
+        <span *ngIf="language" class="info">Sosyal Medya</span>
+        <span *ngIf="!language" class="info">Graphic designer</span>
+        <span *ngIf="!language" class="info">Social Media</span>
+      </div>
+    </div>
+  </div>
+</main>

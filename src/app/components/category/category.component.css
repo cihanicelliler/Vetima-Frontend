@@ -1,0 +1,12 @@
+.list-group-item:focus{
+    border: none !important;
+    color: white;
+}
+.list-group-item:hover{
+    background-color: #14dbf1;
+    color: white;
+    transition: 0.5s;
+}
+.list-group-item{
+    color:#444444
+}

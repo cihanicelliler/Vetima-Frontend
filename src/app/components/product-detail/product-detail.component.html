@@ -1,0 +1,63 @@
+<div class="container">
+    <div class="card mb-5">
+        <div class="container-fliud">
+            <div class="wrapper row">
+                <div class="preview col-md-6">
+                    <div class="preview-pic tab-content" style="max-height:404px;" ngModel="productDetailId">
+                      <div *ngIf="productDetailId==1"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_1}}" /></div>
+                      <div *ngIf="productDetailId==2"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_2}}" /></div>
+                      <div *ngIf="productDetailId==3"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_3}}" /></div>
+                      <div *ngIf="productDetailId==4"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_4}}" /></div>
+                      <div *ngIf="productDetailId==5"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_5}}" /></div>
+                      <div *ngIf="productDetailId==6"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_6}}" /></div>
+                      <div *ngIf="productDetailId==7"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_7}}" /></div>
+                      <div *ngIf="productDetailId==8"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_8}}" /></div>
+                      <div *ngIf="productDetailId==9"  class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;" *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_9}}" /></div>
+                      <div *ngIf="productDetailId==10" class="tab-pane active" id="pic-1"><img class="zoom" style="object-fit: fill !important; max-height:404px;"  *ngIf="productDetails" src="{{productImageBasePath}}{{productDetails[0].imagePath_10}}" /></div>
+                    </div>
+                    <ul class="preview-thumbnail nav nav-tabs">
+                      <li  *ngIf="productDetails[0].imagePath_1" role="button"><a (click)="setId(1)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_1}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_2" role="button"><a (click)="setId(2)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_2}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_3" role="button"><a (click)="setId(3)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_3}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_4" role="button"><a (click)="setId(4)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_4}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_5" role="button"><a (click)="setId(5)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_5}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_6" role="button"><a (click)="setId(6)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_6}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_7" role="button"><a (click)="setId(7)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_7}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_8" role="button"><a (click)="setId(8)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_8}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_9" role="button"><a (click)="setId(9)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_9}}" /></a></li>
+                      <li  *ngIf="productDetails[0].imagePath_10" role="button"><a (click)="setId(10)" data-target="#pic-2" data-toggle="tab"><img width="70px" height="70px" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_10}}" /></a></li>
+                    </ul>
+                    
+                </div>
+                
+                <div class="details col-md-6" *ngIf="language">
+                    <h3 *ngIf="productDetails" class="product-title" style="color: #00a7b8;">{{productDetails[0].productName}}</h3>
+                    <h6 *ngIf="productDetails" class="price">Kategori: <span>{{productDetails[0].categoryName}}</span></h6>
+                    <div *ngIf="productDetails"><p style="white-space: pre-line;" class="product-description">{{productDetails[0].descriptionProduct}}</p></div>
+                    
+                    <h5 *ngIf="productDetails" class="sizes">Açıklama:
+
+                    </h5>
+                    <p style="white-space: pre-line;">{{productDetails[0].descriptionProduct2}}</p>
+
+                </div>
+                <div class="details col-md-6" *ngIf="!language">
+                    <h3 *ngIf="productDetails" class="product-title" style="color: #00a7b8;">{{productDetails[0].productName_EN}}</h3>
+                    <h6 *ngIf="productDetails" class="price">Category: <span>{{productDetails[0].categoryName_EN}}</span></h6>
+                    <div *ngIf="productDetails"><p style="white-space: pre-line;" class="product-description">{{productDetails[0].descriptionProduct_EN}}</p></div>
+                    
+                    <h5 *ngIf="productDetails" class="sizes">Description:
+
+                    </h5>
+                    <p style="white-space: pre-line;">{{productDetails[0].descriptionProduct2_EN}}</p>
+                </div>
+                <div class="col-md-12" style="margin-top: 8rem;" *ngIf="productDetails[0].imagePath_9">
+                    <img class="mx-5 px-5" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_9}}" />
+                </div>
+                <div class="col-md-12" style="margin-top: 8rem;" *ngIf="productDetails[0].imagePath_10">
+                    <img class="mx-5 px-5" style="object-fit: cover;" src="{{productImageBasePath}}{{productDetails[0].imagePath_10}}" />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

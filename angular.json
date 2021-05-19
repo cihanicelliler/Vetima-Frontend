@@ -28,9 +28,18 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.css"
+              "node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "src/styles/css/rotating-card.css",
+              "node_modules/@fortawesome/fontawesome-free/css/all.css",
+              "src/styles.css",
+              "./node_modules/ngx-toastr/toastr.css"
             ],
-            "scripts": []
+            "scripts": [
+              "./node_modules/bootstrap/dist/js/bootstrap.min.js",
+              "node_modules/@fortawesome/fontawesome-free/js/all.js",
+              "./node_modules/jquery/dist/jquery.min.js",
+              "src/assets/customJs/custom.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -93,7 +102,9 @@
             "styles": [
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+             
+            ]
           }
         },
         "lint": {
@@ -122,6 +133,11 @@
           }
         }
       }
+    }
+  },
+  "schematics": {
+    "@schematics/angular:component": {
+      "styleext": "css"
     }
   },
   "defaultProject": "vetima2"

@@ -1,0 +1,21 @@
+export interface ProductDetail{
+    id:number;
+    productName:string;
+    productName_EN:string;
+    categoryName:string;
+    categoryName_EN:string;
+    descriptionProduct:string;
+    descriptionProduct2:string;
+    descriptionProduct_EN:string;
+    descriptionProduct2_EN:string;
+    imagePath_1:string;
+    imagePath_2:string;
+    imagePath_3:string;
+    imagePath_4:string;
+    imagePath_5:string;
+    imagePath_6:string;
+    imagePath_7:string;
+    imagePath_8:string;
+    imagePath_9:string;
+    imagePath_10:string;
+}

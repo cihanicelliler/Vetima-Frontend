@@ -1,0 +1,83 @@
+<div class="container mt-5">
+  <h1
+    *ngIf="language"
+    style="
+      text-align: center;
+      background-color: #00a7b8;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
+    "
+    class="mt-5"
+  >
+    Tanıtım Videoları
+  </h1>
+  <h1
+    *ngIf="!language"
+    class="mt-5"
+    style="
+      text-align: center;
+      background-color: #00a7b8;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
+    "
+  >
+    Introductory Videos
+  </h1>
+  <h2 *ngIf="language" class="mt-5" >Tar Bandaj</h2>
+  <h2 *ngIf="!language" class="mt-5">Tar Bandage</h2>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/BlNeUt9DXa8"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <h2 *ngIf="language" class="mt-5">Hoof Fit ürünlerinin uygulaması</h2>
+  <h2 *ngIf="!language" class="mt-5">Application of Hoof Fit products</h2>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/S6YujOTrHcY"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <h2 *ngIf="language" class="mt-5">Ig-Lock Gold</h2>
+  <h2 *ngIf="!language" class="mt-5">Ig-Lock Gold</h2>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/VSwiAW7rcOg"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <h2 *ngIf="language" class="mt-5">Otomatik Mama Kabı</h2>
+  <h2 *ngIf="!language" class="mt-5">Automatic Food Cup</h2>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/rYkxHd2Er5k"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+  <h2 *ngIf="language" class="mt-5">Repiderma Sprey</h2>
+  <h2 *ngIf="!language" class="mt-5">Repiderma Spray</h2>
+  <iframe
+    width="560"
+    height="315"
+    src="https://www.youtube.com/embed/sefwIeHZd14"
+    title="YouTube video player"
+    frameborder="0"
+    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+    allowfullscreen
+  ></iframe>
+</div>

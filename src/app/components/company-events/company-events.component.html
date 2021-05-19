@@ -1,0 +1,971 @@
+<div class="container mt-5">
+  <h2
+    *ngIf="language"
+    class="mt-5"
+    style="
+      text-align: center;
+      background-color: #00a7b8;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
+    "
+  >
+    Fuar Etkinlikleri / Seminerler / Ziyaretçilerimiz
+  </h2>
+  <h2
+    *ngIf="!language"
+    class="mt-5"
+    style="
+      text-align: center;
+      background-color: #00a7b8;
+      padding: 10px;
+      color: white;
+      border-radius: 10px;
+    "
+  >
+    Fair Events / Seminars / Our Visitors
+  </h2>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">Müşteri Resimleri</p>
+    <p *ngIf="!language">Customer Pictures</p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 20rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 20rem; height: 20rem"
+          src="../../../assets/images/Er-Vet.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 20rem; height: 20rem"
+          src="../../../assets/images/Worldgen.png"
+          alt="Random second slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 20rem; height: 20rem"
+          src="../../../assets/images/umut_vet.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      Çin’li iş ortağımız Nancy Mart.2018 tarihinde şirketimizi ziyaret etti.
+    </p>
+    <p *ngIf="!language">
+      Our Chinese business partner Nancy visited our company on March.2018.
+    </p>
+  </h2>
+  <div style="width: 30rem; height: 20rem; margin: auto">
+    <img
+      style="object-fit: cover"
+      style="width: 30rem; height: 20rem"
+      src="../../../assets/images/Nancy.jpg"
+      alt=""
+    />
+  </div>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">Bayimizin Etkinliklerinden Görüntüler</p>
+    <p *ngIf="!language">Images from the Activities of Our Dealer</p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/bayi1.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/bayi2.jpg"
+          alt="Random second slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/bayi3.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/bayi4.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/bayi5-e1502275844472-scaled.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/bayi6.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/ervet-scaled.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      Tareks Hayvancılık – Ayak Hastalıkları Eğitim Semineri
+    </p>
+    <p *ngIf="!language">Tareks Livestock - Foot Diseases Training Seminar</p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri1.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri2.jpg"
+          alt="Random second slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri3.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri4.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri5.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri6.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri7.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri8.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri9.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/Tareks_Hayvancilik_Semineri10.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">2012 İzmir Fuar Resimleri</p>
+    <p *ngIf="!language">2012 Izmir Fair Pictures</p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/477.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/479.jpg"
+          alt="Random second slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/481.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/483.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/489.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/491.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/492.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/504.jpg"
+          alt="Random third slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      İtalyan iş ortağımız Martens firması yetkilileri 19.07.2016 tarihinde
+      şirketimizi ziyaret etti
+    </p>
+    <p *ngIf="!language">
+      Officials of our Italian business partner Martens company visited our
+      company on 19.07.2016.
+    </p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/resim1.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/resim3.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">İstanbul Animalia 2015 Fuar Resimleri</p>
+    <p *ngIf="!language">Istanbul Animalia 2015 Fair Pictures</p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/1.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/2.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/3.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/4.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/5.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/7.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/8.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/10.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">Kaixin Kxele yetkilileri şirketimizi ziyaret etti</p>
+    <p *ngIf="!language">Kaixin Kxele officials visited our company</p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/12.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/21.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      Vethon Veterinary yetkilileri şirketimizi ziyaret etti.
+    </p>
+    <p *ngIf="!language">Vethon Veterinary officials visited our company.</p>
+  </h2>
+  <div style="width: 30rem; height: 20rem; margin: auto">
+    <img
+      style="object-fit: cover"
+      style="width: 30rem; height: 20rem"
+      src="../../../assets/images/13.jpg"
+      alt=""
+    />
+  </div>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      Şirketimiz Tayland Fuarında Intracare standını ziyaret etti.
+    </p>
+    <p *ngIf="!language">
+      Our company visited the Intracare booth at Thailand Fair.
+    </p>
+  </h2>
+  <div style="width: 30rem; height: 20rem; margin: auto">
+    <img
+      style="object-fit: cover"
+      style="width: 30rem; height: 20rem"
+      src="../../../assets/images/14.jpg"
+      alt=""
+    />
+  </div>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      Animalia İstanbul 2012 fuarında fuar standımız ilgi çekti
+    </p>
+    <p *ngIf="!language">
+      Our fair stand attracted attention at Animalia Istanbul 2012 fair
+    </p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/15.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/22.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      20 – 23 Şubat Animalia Fuar standımızından görüntüler
+    </p>
+    <p *ngIf="!language">
+      Images from our Animalia Fair stand on February 20 - 23
+    </p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/16.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/31.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/41.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/51.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/61.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/71.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/81.jpg"
+          alt="Random first slide"
+        />
+      </div> </ng-template
+    ><ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/111.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      Erkoç KX 5100 Satın Alan Müşterilerini Kuşadası Blue Sky Hoyel’de Eğitime
+      Aldı
+    </p>
+    <p *ngIf="!language">
+      Erkoç Educated Its Customers, Who Bought KX 5100, at Blue Sky Hoyel in
+      Kuşadası
+    </p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/17.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/24.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/32.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/42.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/52.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/62.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/72.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/82.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/92.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/102.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/112.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/121.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/131.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      18.01.2014 tarihinde Gaziantep’te “Buzağı İshalleri Semineri” düzenlendi.
+      (Teymur Continental Hotel)
+    </p>
+    <p *ngIf="!language">
+      "Calf Diarrhea Seminar" was held on 18.01.2014 in Gaziantep. (Teymur
+      Continental Hotel)
+    </p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/18.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/25.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/43.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      10.05.2014 tarihinde Aydın Anemon Otelde “Buzağı İshallerinde Spesifik
+      Antikorun Önemi ve Ultrason Semineri”
+    </p>
+    <p *ngIf="!language">
+      "The Importance of Specific Antibody in Calf Diarrhea and Ultrasound
+      Seminar" on 10.05.2014 in Aydın Anemon Hotel.
+    </p>
+  </h2>
+  <ngb-carousel class="mt-2" style="width: 30rem; height: 20rem; margin: auto">
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/19.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/26.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/44.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/53.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/63.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/83.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/93.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/103.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/122.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+    <ng-template ngbSlide>
+      <div class="picsum-img-wrapper">
+        <img
+          style="object-fit: cover"
+          style="width: 30rem; height: 20rem"
+          src="../../../assets/images/132.jpg"
+          alt="Random first slide"
+        />
+      </div>
+    </ng-template>
+  </ngb-carousel>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      Malezya’ lı iş ortağımız 29.03.2013 tarihinde bizi ziyaret etti
+    </p>
+    <p *ngIf="!language">
+      Our Malaysian business partner visited us on 29.03.2013
+    </p>
+  </h2>
+  <div style="width: 30rem; height: 20rem; margin: auto">
+    <img
+      style="object-fit: cover"
+      style="width: 30rem; height: 20rem"
+      src="../../../assets/images/110.jpg"
+      alt=""
+    />
+  </div>
+  <h2 class="mt-5" style="color: #00a7b8; text-align: center">
+    <p *ngIf="language">
+      Malezyalı iş ortağımız TW Chin şirketimizi ziyaret etti
+    </p>
+    <p *ngIf="!language">
+      Our Malaysian business partner TW Chin visited our company
+    </p>
+  </h2>
+  <div style="width: 30rem; height: 20rem; margin: auto">
+    <img
+      style="object-fit: cover"
+      style="width: 30rem; height: 20rem"
+      src="../../../assets/images/Haber-300x225.jpg"
+      alt=""
+    />
+  </div>
+</div>
